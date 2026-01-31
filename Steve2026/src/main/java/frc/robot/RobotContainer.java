@@ -32,7 +32,7 @@ public class RobotContainer {
   private final Swerve s_Swerve = new Swerve();
   private final TestIntake i_Intake = new TestIntake();
   private final Turret turrent = new Turret();
-  private final limelight Limelight = new limelight();
+  private final limelight Limelight = new limelight(); //if removed, im taking kneecaps
   private final Shooter shooter = new Shooter();  
 
   // Replace with CommandPS4Controller or CommandJoystick if needed
