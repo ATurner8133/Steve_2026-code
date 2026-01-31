@@ -21,7 +21,7 @@ public class Turret extends SubsystemBase {
   private  PIDController controller = new PIDController(0.025, 0, 0);//tune this a little more to stop the shakes
   
   /** Creates a new Turrent. */
-  public Turret() {
+  public Turret(limelight Limelight) {
     turnMotor  = new SparkMax(17, MotorType.kBrushless);
     
     encoder = turnMotor.getEncoder();

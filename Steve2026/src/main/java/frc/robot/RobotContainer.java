@@ -31,9 +31,10 @@ public class RobotContainer {
   // The robot's subsystems and commands are defined here...
   private final Swerve s_Swerve = new Swerve();
   private final TestIntake i_Intake = new TestIntake();
-  private final Turret turrent = new Turret();
-  private final limelight Limelight = new limelight(); //if removed, im taking kneecaps
-  private final Shooter shooter = new Shooter();  
+  
+  private final limelight Limelight = new limelight(); 
+  private final Turret turrent = new Turret(Limelight);
+  private final Shooter shooter = new Shooter(Limelight);  
 
   // Replace with CommandPS4Controller or CommandJoystick if needed
   private final XboxController driver =

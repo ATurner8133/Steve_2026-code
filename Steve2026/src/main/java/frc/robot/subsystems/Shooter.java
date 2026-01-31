@@ -21,7 +21,7 @@ public class Shooter extends SubsystemBase {
   private  VelocityVoltage shoot;
   private  Slot0Configs pid;
 
-  public Shooter() {
+  public Shooter(limelight Limelight) {
     shooty = new TalonFX(32);
     
      pid = new Slot0Configs();
